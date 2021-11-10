@@ -2243,3 +2243,33 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-10-05 22:31:57.599
 !MESSAGE Indexed 'Clock' (23 sources, 83 headers) in 3.33 sec: 5,390 declarations; 29,992 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0057%)
+
+!ENTRY org.eclipse.core.resources 4 567 2021-11-10 00:28:50.887
+!MESSAGE The project description file (.project) for '001HelloWorld' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for '001HelloWorld' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:763)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1060)
+	at org.eclipse.ui.actions.OpenResourceAction$1.doOpenWithReferences(OpenResourceAction.java:233)
+	at org.eclipse.ui.actions.OpenResourceAction$1.runInWorkspace(OpenResourceAction.java:279)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-11-10 00:30:32.476
+!MESSAGE Indexed 'teste' (23 sources, 83 headers) in 1.66 sec: 4,590 declarations; 26,451 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0064%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-11-10 00:33:00.981
+!MESSAGE Indexed '044PeriClockEnable' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-11-10 00:33:01.864
+!MESSAGE Indexed '044PeriClockEnable' (2 sources, 53 headers) in 0.18 sec: 1,962 declarations; 2,807 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-11-10 00:34:09.005
+!MESSAGE Indexed '004PeriClockEnable' (21 sources, 81 headers) in 0.897 sec: 4,037 declarations; 21,171 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0079%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-11-10 00:35:28.392
+!MESSAGE Indexed '004PeriClockEnable' (3 sources, 53 headers) in 0.183 sec: 1,964 declarations; 2,809 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
